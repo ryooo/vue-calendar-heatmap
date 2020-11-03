@@ -185,7 +185,7 @@ export default {
       if (this.tooltip) {
         if (day.count != null) {
           return {
-            content: `<b>${day.count} ${this.tooltipUnit}</b> ${this.lo.on} ${this.lo.months[day.date.getMonth()]} ${day.date.getDate()}, ${day.date.getFullYear()}`,
+            content: `<b>${day.count} ${this.tooltipUnit}</b> ${this.lo.on} ${day.date.getFullYear()}年${this.lo.months[day.date.getMonth()]}${day.date.getDate()}日`,
             delay: { show: 150, hide: 50 }
           }
         } else if (this.noDataText) {
